@@ -20,7 +20,6 @@ document.querySelectorAll("#projects-collection a").forEach(link => {
         if (link.dataset.music) audio.src = link.dataset.music;
 
         popUp.showPopover();
-        //if (link.dataset.music) audio.play();
     };
 });
 
