@@ -41,6 +41,10 @@
             font-size: medium;
         }
 
+        #player button {
+          color: var(--player-color);  
+        }
+
         #index-page {
             position: relative;
         }
@@ -93,6 +97,10 @@
         #pop-up::backdrop { background: rgb(0 0 0 / 0.6); }
         #pop-up img { max-width: 100%; height: auto; }
 
+        #pop-up-close {
+            color: var(--bg-color-page);
+        }
+
         /* --- Music player --- */
         #player {
             position: fixed;
@@ -115,6 +123,7 @@
         ::-webkit-scrollbar-thumb {
             background-color: var(--scrollbar-thumb-color);
         }
+        
 
     </style>
 </head>
@@ -160,7 +169,7 @@
             <div id="danSDiv"><a href="#" data-file="projects/danS/danS.md" data-music="" ><img src="./projects/danS/img/danS_img.jpg" alt=""></a></div>
         </div>
         <div id="pop-up" popover>
-            <button popovertarget="pop-up" popovertargetaction="hide">✕</button>
+            <button id="pop-up-close" popovertarget="pop-up" popovertargetaction="hide">✕</button>
             <article id="content"></article>
             <div id="player">
                 <p>Check out track 1 from the album!</p>
