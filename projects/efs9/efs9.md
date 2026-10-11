@@ -1,4 +1,4 @@
-# Project description \- "Escape from Sector 9" Software Engineering Uni group project
+# Album description \- "Escape from Sector 9" Software Engineering Uni group project
 
 ---
 

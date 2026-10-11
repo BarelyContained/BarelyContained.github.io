@@ -1,4 +1,4 @@
-# Project description \- “RexOSG” Steam Library-2-Hardware compatibility checker solo personal project
+# Album description \- “RexOSG” Steam Library-2-Hardware compatibility checker solo personal project
 
 ---
 ## Context

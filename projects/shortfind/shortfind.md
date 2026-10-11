@@ -1,4 +1,4 @@
-# Project description \- [“ShortFind” UI/UX Uni group project](https://www.figma.com/design/1aviQ8BkMinrMPUDFVm7Be/HCI-group-4?m=auto&t=fx99tgPwTYqu1UfQ-1)
+# Album description \- [“ShortFind” UI/UX Uni group project](https://www.figma.com/design/1aviQ8BkMinrMPUDFVm7Be/HCI-group-4?m=auto&t=fx99tgPwTYqu1UfQ-1)
 
 ---
 
