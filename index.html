@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Step CDs - Home page</title>
+    <link rel="icon" type="image/x-icon" href="site-other-images/dan-sleeping.jpg">
     <style>
+
+        :root {
+            --bg-color-page: #0081AF;
+            --bg-page-text-color: #eaba6b;
+            --popup-text-color: #0081AF;
+            --popup-bg-color: #EAD2AC;
+            --scrollbar-color: #266B84;
+            --scrollbar-thumb-color: #eaba6b;
+            --player-color: #AA4586;
+        }
+
+        body {
+            background-color: var(--bg-color-page);
+            color: var(--bg-page-text-color);
+        }
 
         @font-face {
             font-family: normfont;
-            src: url("fonts/titlefont-neuropol_x/Neuropol-X-Rg.otf");
+            src: url("fonts/ns-audex/Audex-Regular.ttf");
         }
 
         @font-face {
@@ -47,6 +63,10 @@
             position: absolute;
         }
 
+        #projects-collection > div:hover {
+            border-color: #00ABE7; border-width: 10px; border-style:dashed;
+        }
+
         #FMLDiv { top: 550px; left: 30 px;}
         #RexOSGDiv { top: 40px; left: 10px;}
         #ShortFindDiv { top: 120px; left: 420px; }
@@ -67,6 +87,8 @@
             border: none;
             border-radius: 12px;
             padding: 2rem 2rem 5rem;
+            background-color: var(--popup-bg-color);
+            color: var(--popup-text-color);
         }
         #pop-up::backdrop { background: rgb(0 0 0 / 0.6); }
         #pop-up img { max-width: 100%; height: auto; }
@@ -81,10 +103,18 @@
             gap: 0.5rem;
             padding: 0.5rem 1rem;
             border-radius: 999px;
-            background: #111;
-            color: #fff;
+            background: var(--player-color);
+            color:white;
         }
         #player[hidden] { display: none; }
+
+        ::-webkit-scrollbar {
+            background-color: var(--scrollbar-color);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: var(--scrollbar-thumb-color);
+        }
 
     </style>
 </head>
