@@ -3,6 +3,7 @@ const content = document.getElementById("content");
 const player = document.getElementById("player");
 const audio = new Audio();
 audio.loop = true;
+audio.volume = 0.6;
 
 function stopMusic() {
     audio.pause();
