@@ -17,6 +17,66 @@
             --player-color: #AA4586;
         }
 
+        /* Phone screens */ 
+        @media screen and (min-width: 300px) {
+            #FMLDiv { top: 750px; left: 30px;}
+            #RexOSGDiv { top: 40px; left: 10px;}
+            #ShortFindDiv { top: 320px; left: 120px;}
+            #EFS9Div      { top: 540px; left: 50px;}
+            #danSDiv {top: 1000px; left: 40px;}
+
+            #projects-collection {
+                width: 300px;
+                height: 100%;
+            }
+
+            #projects-collection img {
+                display: block;
+                height: auto;
+                width: 200px;
+            }
+        }
+
+        /*Tablet screens */
+        @media screen and (min-width: 800px) {
+            #FMLDiv { top: 550px; left: 55px;}
+            #RexOSGDiv { top: 40px; left: 35px;}
+            #ShortFindDiv { top: 120px; left: 575px; } 
+            #EFS9Div      { top: 340px; left: 245px; }
+            #danSDiv {top: 500px; left: 525px;}
+
+            #projects-collection {
+                width: 800px;
+                height: 100%;
+            }
+
+            #projects-collection img {
+                display: block;
+                height: auto;
+                width: 250px;
+            }
+        }
+
+        /*Computer screens */
+        @media screen and (min-width: 1600px) {
+            #FMLDiv { top: 550px; left: 30 px;}
+            #RexOSGDiv { top: 40px; left: 10px;}
+            #ShortFindDiv { top: 120px; left: 420px; }
+            #EFS9Div      { top: 340px; left: 220px; }
+            #danSDiv {top: 500px; left: 500px;}
+
+            #projects-collection {
+                width: 800px;
+                height: 100%;
+            }
+
+            #projects-collection img {
+                display: block;
+                height: auto;
+                width: 200px;
+            }
+        } 
+
         body {
             background-color: var(--bg-color-page);
             color: var(--bg-page-text-color);
@@ -58,8 +118,6 @@
             top: 0px;
             left: 50%;
             transform: translateX(-50%);
-            width: 800px;
-            height: 600px;
             z-index: 1;
         }
 
@@ -69,18 +127,6 @@
 
         #projects-collection > div:hover {
             border-color: #00ABE7; border-width: 10px; border-style:dashed;
-        }
-
-        #FMLDiv { top: 550px; left: 30 px;}
-        #RexOSGDiv { top: 40px; left: 10px;}
-        #ShortFindDiv { top: 120px; left: 420px; }
-        #EFS9Div      { top: 340px; left: 220px; }
-        #danSDiv {top: 500px; left: 500px;}
-
-        #projects-collection img {
-            display: block;
-            width: 200px;
-            height: auto;
         }
 
         /* --- Pop-up --- */
