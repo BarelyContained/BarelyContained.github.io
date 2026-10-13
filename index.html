@@ -59,7 +59,7 @@
 
         /*Computer screens */
         @media screen and (min-width: 1600px) {
-            #FMLDiv { top: 550px; left: 30 px;}
+            #FMLDiv { top: 550px; left: 30px;}
             #RexOSGDiv { top: 40px; left: 10px;}
             #ShortFindDiv { top: 120px; left: 420px; }
             #EFS9Div      { top: 340px; left: 220px; }
@@ -101,10 +101,6 @@
             font-size: medium;
         }
 
-        #player button {
-          color: var(--player-color);  
-        }
-
         #index-page {
             position: relative;
         }
@@ -136,7 +132,7 @@
             overflow-y: auto;
             border: none;
             border-radius: 12px;
-            padding: 2rem 2rem 5rem;
+            padding: 2rem;
             background-color: var(--popup-bg-color);
             color: var(--popup-text-color);
         }
@@ -147,20 +143,137 @@
             color: var(--bg-color-page);
         }
 
+        /* --- Images and videos in a project description --- */
+        #content .media-tile {
+            display: block;
+            position: relative;
+            max-width: 100%;
+            padding: 0;
+            border: none;
+            background: none;
+            cursor: zoom-in;
+        }
+
+        #content .media-tile > * { display: block; max-width: 100%; height: auto; }
+
+        #content .media-tile:hover,
+        #content .media-tile:focus-visible {
+            outline: 3px dashed #00ABE7;
+            outline-offset: 2px;
+        }
+
+        /* Two or more in a row (same paragraph in the .md) become a grid */
+        #content .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 0.75rem;
+        }
+
+        #content .media-grid .media-tile { width: 100%; aspect-ratio: 4 / 3; }
+        #content .media-grid .media-tile > * { width: 100%; height: 100%; object-fit: cover; }
+
+        #content .media-tile.is-video::after {
+            content: "▶";
+            position: absolute;
+            inset: 0;
+            display: grid;
+            place-items: center;
+            font-size: 2rem;
+            color: white;
+            background: rgb(0 0 0 / 0.3);
+        }
+
+        /* --- Zoomed-in view --- */
+        #lightbox {
+            position: fixed;
+            inset: 0;
+            box-sizing: border-box;
+            width: 100vw;
+            height: 100dvh;
+            max-width: none;
+            max-height: none;
+            margin: 0;
+            padding: 1rem;
+            border: none;
+            background: rgb(0 0 0 / 0.9);
+            color: white;
+        }
+
+        #lightbox:popover-open {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            grid-template-rows: 1fr auto;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        #lightbox-stage {
+            min-width: 0;
+            height: 100%;
+            display: grid;
+            place-items: center;
+            cursor: zoom-out;
+        }
+
+        #lightbox-stage img,
+        #lightbox-stage video {
+            max-width: 100%;
+            max-height: calc(100dvh - 6rem);
+            object-fit: contain;
+            cursor: default;
+        }
+
+        #lightbox-caption {
+            grid-column: 1 / -1;
+            margin: 0;
+            min-height: 1.5em;
+            text-align: center;
+        }
+
+        #lightbox button {
+            width: 2.5rem;
+            height: 2.5rem;
+            border: none;
+            border-radius: 99px;
+            font-size: 1.25rem;
+            color: var(--player-color);
+            cursor: pointer;
+        }
+
+        #lightbox-close { position: absolute; top: 1rem; right: 1rem; z-index: 1; }
+
         /* --- Music player --- */
         #player {
-            position: fixed;
-            bottom: 1rem;
-            left: 50%;
-            translate: -50% 0;
+            position: sticky;
+            bottom: 0;
+            box-sizing: border-box;
             display: flex;
+            align-items: center;
+            justify-content: space-between;
             gap: 0.5rem;
+            margin: 1rem auto 0;
             padding: 0.5rem 1rem;
-            border-radius: 999px;
+            width: min(22rem, 100%);
+            min-height: 3rem;
+            border-radius: 99px;
             background: var(--player-color);
             color:white;
         }
+
         #player[hidden] { display: none; }
+
+        #player p { margin: 0; }
+
+        #player-control-buttons {
+            display: flex;
+            gap: 0.5rem;
+            flex-shrink: 0;
+        }
+
+        #player button {
+          color: var(--player-color);
+          white-space: nowrap;
+        }
 
         ::-webkit-scrollbar {
             background-color: var(--scrollbar-color);
@@ -200,12 +313,6 @@
             <p>Step CDs</p>
             <p>Step CDs</p>
             <p>Step CDs</p>
-            <p>Step CDs</p>
-            <p>Step CDs</p>
-            <p>Step CDs</p>
-            <p>Step CDs</p>
-            <p>Step CDs</p>
-            <p>Step CDs</p>
         </div>
         <div id="projects-collection">
             <div id="RexOSGDiv"><a href="#" data-file="projects/rexosg/rexosg.md" data-music="projects/rexosg/music/superhero.mp3"><img src="./projects/rexosg/img/rexosg-album-art.png" alt="RexOSG"></a></div>
@@ -218,9 +325,19 @@
             <button id="pop-up-close" popovertarget="pop-up" popovertargetaction="hide">✕</button>
             <article id="content"></article>
             <div id="player">
-                <p>Check out track 1 from the album!</p>
-                <button id="play">▶ Play</button>
-                <button id="stop">■ Stop</button>
+                <p>Check out track 1!</p>
+                <div id="player-control-buttons">
+                    <button id="play">▶ Play</button>
+                    <button id="stop">■ Stop</button>
+                </div>
+            </div>
+            <!-- Nested inside #pop-up so opening it doesn't close the pop-up -->
+            <div id="lightbox" popover>
+                <button id="lightbox-close" popovertarget="lightbox" popovertargetaction="hide" aria-label="Close">✕</button>
+                <button id="lightbox-prev" aria-label="Previous">‹</button>
+                <div id="lightbox-stage"></div>
+                <button id="lightbox-next" aria-label="Next">›</button>
+                <p id="lightbox-caption"></p>
             </div>
         </div>
     </div>

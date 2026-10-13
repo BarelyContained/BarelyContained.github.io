@@ -18,10 +18,13 @@ The brief specified core mechanics (colour-based tile movement, three NPC types 
 
 ## Process
 
-Requirements analysis Broke down the functional specification into the core systems that needed designing: tile movement rules, NPC behaviour (Flying Assassin, Floor Following Thief, Smart Thief), item interactions, win/lose conditions, and the level file format.  
-Design phase (Assignment 1\) As a team we designed the object-oriented class structure and hierarchies for the game, alongside a custom level file format for storing tile layouts, NPC starting data, and level timers. I contributed the main menu UML.  
-Team leadership I led the team throughout — running bi-weekly check-ins, assigning tasks, and supporting a non-native English speaker to contribute effectively. Weekly contribution breakdowns and minutes were a required part of the assignment structure, which I helped keep consistent and well-documented.  
-Implementation (Assignment 2\) Built out the design in JavaFX. I wrote the in-game GUI screens using Scene Builder and FXML, fixing layout and interaction issues as they came up during testing, and managed the shared codebase through Git and GitHub throughout.  
+**Requirements analysis** Broke down the functional specification into the core systems that needed designing: tile movement rules, NPC behaviour (Flying Assassin, Floor Following Thief, Smart Thief), item interactions, win/lose conditions, and the level file format.  
+
+**Design phase (Assignment 1\)** As a team we designed the object-oriented class structure and hierarchies for the game, alongside a custom level file format for storing tile layouts, NPC starting data, and level timers. I contributed the main menu UML.  
+
+**Team leadership** I led the team throughout — running bi-weekly check-ins, assigning tasks, and supporting a non-native English speaker to contribute effectively. Weekly contribution breakdowns and minutes were a required part of the assignment structure, which I helped keep consistent and well-documented.  
+
+**Implementation (Assignment 2\)** Built out the design in JavaFX. I wrote the in-game GUI screens using Scene Builder and FXML, fixing layout and interaction issues as they came up during testing, and managed the shared codebase through Git and GitHub throughout.  
 Testing Tested UI screens and interactions as they were implemented, catching and fixing layout/interaction bugs.
 
 ## Result
@@ -30,4 +33,6 @@ We delivered a working implementation covering the core specified gameplay — t
 
 ## Reflections
 
-Leading a 7-person team was the main challenge — keeping everyone aligned, making sure a non-native English speaker had what they needed to contribute fully, and keeping the group's process (minutes, task tracking, contribution breakdowns) actually useful rather than just a formality. On the technical side, the biggest lesson was around design precision — some of our early class/file-format decisions caused avoidable friction later in implementation, which reinforced how much a good design phase saves you during the build. I'm proud of how the team held together and communicated despite that, and of the GUI work I built directly.  
+Leading a 7-person team was the main challenge — keeping everyone aligned, making sure a non-native English speaker had what they needed to contribute fully, and keeping the group's process (minutes, task tracking, contribution breakdowns) actually useful rather than just a formality. 
+
+On the technical side, the biggest lesson was around design precision — some of our early class/file-format decisions caused avoidable friction later in implementation, which reinforced how much a good design phase saves you during the build. I'm proud of how the team held together and communicated despite that, and of the GUI work I built directly.  

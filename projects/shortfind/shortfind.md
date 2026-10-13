@@ -24,11 +24,15 @@ Design an analogue, everyday object and augment it with a unique Internet-of-Thi
 
 **Submitted Video 1** Our first design used a physical scanner device. Our tutor's feedback on this submission was that the scanner was pulling focus away from the sticker — our actual "analogue object" — so we cut it.
 
+![Initial design of ShortFind system](/projects/shortfind/vid/video1.mp4)
+
 **Refinement of idea \+ sketching** We replaced the scanner with a phone app, and reworked the audio feedback logic: volume indicated distance, and musical clarity (via a mid-frequency filter) indicated how accurately the user was facing the item.
 
 **Prototyping** We built a Wizard-of-Oz prototype: a Figma UI with interactive user flows, paired with live-mixed audio via the Cross DJ app and a Bluetooth speaker, so a facilitator could simulate the tracking response in real time as a test participant moved around a room.
 
 **Video 2** Demonstrated two use-case scenarios — locating a single item within a room, and locating two items spread across a house — showing the full interaction loop from opening the app to homing in on the object.
+
+![Updated design of ShortFind system](/projects/shortfind/vid/video2.mp4)
 
 **10 heuristics of usability** We ran a Nielsen heuristic evaluation on the prototype. It scored well on “match with the real world” and “minimalism”, but flagged gaps in “system status feedback”, “navigation consistency”, and “error recovery” — which shaped what we tested for next.
 
