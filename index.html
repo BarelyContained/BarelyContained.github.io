@@ -96,7 +96,7 @@
             font-family: titlefont;
         }
 
-        p, li {
+        p, li, span {
             font-family: normfont;
             font-size: medium;
         }
@@ -282,7 +282,33 @@
         ::-webkit-scrollbar-thumb {
             background-color: var(--scrollbar-thumb-color);
         }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            cursor: pointer;
+        }
+
+        .tooltiptext {
+            visibility: hidden;
+            width: 130px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
         
+        span::after {
+            content: attr(data-genres);
+        }
 
     </style>
 </head>
@@ -315,11 +341,11 @@
             <p>Step CDs</p>
         </div>
         <div id="projects-collection">
-            <div id="RexOSGDiv"><a href="#" data-file="projects/rexosg/rexosg.md" data-music="projects/rexosg/music/superhero.mp3"><img src="./projects/rexosg/img/rexosg-album-art.png" alt="RexOSG"></a></div>
-            <div id="ShortFindDiv"><a href="#" data-file="projects/shortfind/shortfind.md" data-music="projects/shortfind/music/european-redwood-v3.mp3"><img src="./projects/shortfind/img/shortfind-album-art.png" alt="ShortFind"></a></div>
-            <div id="EFS9Div"><a href="#" data-file="projects/efs9/efs9.md" data-music="projects/efs9/music/threat-detector-mix-v1.mp3"><img src="./projects/efs9/img/EFS9-album-art.png" alt="Escape From Sector 9"></a></div>
-            <div id="FMLDiv"><a href="#" data-file="projects/fml/fml.md" data-music="projects/fml/music/finding-work-mix-v1.mp3"><img src="./projects/fml/img/fml-album-art.png" alt="Fire Machine Learning"></a></div>
-            <div id="danSDiv"><a href="#" data-file="projects/danS/danS.md" data-music="" ><img src="./projects/danS/img/danS.webp" alt=""></a></div>
+            <div id="RexOSGDiv" class="tooltip"><a href="#" data-file="projects/rexosg/rexosg.md" data-music="projects/rexosg/music/superhero.mp3"><img src="./projects/rexosg/img/rexosg-album-art.png" alt="RexOSG"><span class="tooltiptext" data-genres="Full-stack engineering, User testing">Genres: </span></a></div>
+            <div id="ShortFindDiv" class="tooltip"><a href="#" data-file="projects/shortfind/shortfind.md" data-music="projects/shortfind/music/european-redwood-v3.mp3"><img src="./projects/shortfind/img/shortfind-album-art.png" alt="ShortFind"><span class="tooltiptext" data-genres="UI/UX design, UI prototyping">Genres: </span></a></div>
+            <div id="EFS9Div" class="tooltip"><a href="#" data-file="projects/efs9/efs9.md" data-music="projects/efs9/music/threat-detector-mix-v1.mp3"><img src="./projects/efs9/img/EFS9-album-art.png" alt="Escape From Sector 9"><span class="tooltiptext" data-genres="Software Engineering, Software design">Genres: </span></a></div>
+            <div id="FMLDiv" class="tooltip"><a href="#" data-file="projects/fml/fml.md" data-music="projects/fml/music/finding-work-mix-v1.mp3"><img src="./projects/fml/img/fml-album-art.png" alt="Fire Machine Learning"><span class="tooltiptext" data-genres="Data Science, Machine Learning">Genres: </span></a></div>
+            <div id="danSDiv" class="tooltip"><a href="#" data-file="projects/danS/danS.md" data-music="" ><img src="./projects/danS/img/danS.webp" alt=""><span class="tooltiptext" data-genres="CS Student, Creative problem solver">Genres: </span></a></div>
         </div>
         <div id="pop-up" popover>
             <button id="pop-up-close" popovertarget="pop-up" popovertargetaction="hide">✕</button>
