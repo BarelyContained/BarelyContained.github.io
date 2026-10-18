@@ -1,4 +1,4 @@
-# Album description \- About the site owner (Dan Stepanov)
+# Dan Stepanov
 
 ---
 
@@ -22,19 +22,20 @@ Java (Escape From Sector 9, Web Service Development coursework), Python (Fire Ma
 
 ## Non-technical Skills (and in which projects used)
 
-Team leadership (Escape From Sector 9, ShortFind).
+Team leadership (Escape From Sector 9, ShortFind). Creative problem solving (ShortFind, RexOSG).
 
 ## Career interests
 
-UI/UX design, full-stack development or software engineering.
+Want to land an internship in UI/UX design, full-stack development or User research. 
+Exploring these different career paths in my projects.
 
 ## Personal passions
 
-Creating music. Collecting CDs. Creating a home music studio to record music live.
+Producing music on a laptop. Playing and recording physical instruments on a Tascam digital recorder. Collecting CDs.
 
 ## A note about Research
 
-Considering doing a masters in Computer Science, specifically around Human Computer Interaction. Possibly also a Doctorate. Interested in topics to do with reversing Global warming, Waste innovation, and better technology design for neurodivergent people.
+Strongly considering doing a masters in Computer Science, specifically around Human Computer Interaction. Possibly also a Doctorate. Intro to Human Computer Interaction was far and beyond my favourite module in my course, and have picked Human Computer Interaction (Part II as it were) as one of my third year modules. I have started reading more academic papers - interested in researching technology to do with Global warming, Waste innovation, and better technology design for neurodivergent people.
 
 ## A final note
 

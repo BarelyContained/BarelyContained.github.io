@@ -1,4 +1,4 @@
-# Album description \- "Escape from Sector 9" Software Engineering Uni group project
+#"Escape from Sector 9"
 
 ---
 
@@ -12,9 +12,9 @@ Java, JavaFX, Scene Builder/FXML, Git, GitHub, UML
 
 ## Task
 
-Design and implement a JavaFX-based reimagining of the 1997 tile-based puzzle video game Jewel Chase, as a two-part group assignment: an object-oriented design (UML, class structure, level file format) followed by a fully coded implementation. 
+Design and implement a JavaFX-based video game. The game would be a reimagining of the 1997 tile-based puzzle  game "Jewel Chase", created in a two-part group assignment: an object-oriented design (UML, class structure, level file format) followed by a fully coded implementation. 
 
-The brief specified core mechanics (colour-based tile movement, three NPC types with distinct AI behaviours, items including loot/bombs/gates/levers, player profiles, save/load, and per-level high score tables) but left theming, class design, and the level file format entirely up to the group.
+The brief specified core mechanics (colour-based tile movement, three NPC types with distinct AI behaviours, items including loot,bombs,gates,levers; player profiles, save/load, and per-level high score tables) but left theming, class design, and the level file format entirely up to the group.
 
 ## Process
 

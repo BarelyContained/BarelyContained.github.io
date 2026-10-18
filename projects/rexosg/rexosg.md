@@ -1,4 +1,4 @@
-# Album description \- “RexOSG” Steam Library-2-Hardware compatibility checker solo personal project
+# “RexOSG”
 
 ---
 ## Context
@@ -11,7 +11,7 @@ Python, Flask, Steam Web API and store API, requests, BeautifulSoup, rapidfuzz, 
 
 ## Task
 
-Build a tool that automatically checks a Steam library's games against a user's actual PC hardware and shows which upgrades would unlock the most games, instead of manually cross-referencing hundreds of requirement pages by hand. The project started from a personal problem: owning 564 Steam games and not being able to run some of them on current hardware, while planning to build a new PC in the next couple of years and wanting real data on what to prioritise buying.
+Build a tool that automatically checks a Steam user's video games library against their actual PC hardware and shows which upgrades would unlock the most games, instead of manually cross-referencing hundreds of requirement pages by hand. The project started from a personal problem: owning 564 Steam games and not being able to run some of them on current hardware. Planning to build a new PC in the next couple of years, but needed reliable data to prioritise what to buy.
 
 ## Process
 

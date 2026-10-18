@@ -1,4 +1,4 @@
-# Album description \- "Predicting Forest Fires" Data Science Uni individual project
+# "Predicting Forest Fires"
 
 ---
 
