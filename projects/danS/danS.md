@@ -14,7 +14,7 @@ I also enjoy writing music: All of the music from the albums is original, made b
 
 This site is a work-in-progress, and I know it doesn't scream "CDs" at this minute.
 
-But some features are coming which will make the experience more cohesive, trust me! &#128513;
+But some features are coming which will make the experience more CD and music related but hopefully still makes a cohesive portfolio site&#128513;
 
 ## Technical Skills (and in which projects the skill was used)
 
